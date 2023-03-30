@@ -1,0 +1,9 @@
+.titulo {
+  color: #f1941d;
+}
+
+@media (max-width: 576px) {
+  .ingredientes {
+    background-color: #b6731b;
+  }
+}
