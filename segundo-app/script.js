@@ -25,7 +25,7 @@ const createMeal = (meal) => {
 
   const newInnerHTML = `
 		<div class="row">
-			<div class="col-12 col-md-8 col-lg-3">
+			<div class="col-12 col-md-8 col-lg-3 container-fluid px-0">
 				<img src="${meal.strMealThumb}" alt="Meal Image" class="img-fluid">
       </div>
       <div class="col-12 order-md-first m-1 text-center titulo">
@@ -66,12 +66,30 @@ const createMeal = (meal) => {
           <h5 class="text-center text-md-left"> Instructions: </h5>
 				  <p>${meal.strInstructions}</p>
 			  </div>
-      </div>
+      
+
+      <div class="embed-responsive embed-responsive-16by9 col-12 col-md-10 col-lg-8 mx-auto">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${meal.strYoutube.slice(
+        -11
+      )}"></iframe>
+    </div>
+    </div>
+    
 	`;
 
   meal_container.innerHTML = newInnerHTML;
 };
 
+/*
+${meal.strYoutube ? `
+<div class="row">
+  <h5>Video Recipe</h5>
+  <div class="videoWrapper">
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
+    </iframe>
+  </div>
+</div>` : ''}*/
 // SOCIAL PANEL JS
 const floating_btn = document.querySelector('.floating-btn');
 const close_btn = document.querySelector('.close-btn');
