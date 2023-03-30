@@ -67,9 +67,8 @@ const createMeal = (meal) => {
 				  <p>${meal.strInstructions}</p>
 			  </div>
       
-
+      <h5 class="text-center text-md-left col-12">Recipe video:</h5>
       <div class="embed-responsive embed-responsive-16by9 col-12 col-md-10 col-lg-8 mx-auto">
-      <h5 class="text-center text-md-left">Recipe video:</h5>
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${meal.strYoutube.slice(
         -11
       )}"></iframe>
