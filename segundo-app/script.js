@@ -69,6 +69,7 @@ const createMeal = (meal) => {
       
 
       <div class="embed-responsive embed-responsive-16by9 col-12 col-md-10 col-lg-8 mx-auto">
+      <h5 class="text-center text-md-left">Recipe video:</h5>
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${meal.strYoutube.slice(
         -11
       )}"></iframe>
@@ -79,28 +80,3 @@ const createMeal = (meal) => {
 
   meal_container.innerHTML = newInnerHTML;
 };
-
-/*
-${meal.strYoutube ? `
-<div class="row">
-  <h5>Video Recipe</h5>
-  <div class="videoWrapper">
-    <iframe width="420" height="315"
-    src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
-    </iframe>
-  </div>
-</div>` : ''}*/
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector(
-  '.social-panel-container'
-);
-
-floating_btn.addEventListener('click', () => {
-  social_panel_container.classList.toggle('visible');
-});
-
-close_btn.addEventListener('click', () => {
-  social_panel_container.classList.remove('visible');
-});
