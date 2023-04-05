@@ -5,3 +5,30 @@
   --light-blue: #608cf7;
   --blue: #2761ef;
 }
+
+.titulo {
+  color: var(--orange);
+}
+.subtitulo {
+  color: var(--light-orange);
+}
+
+/* unvisited link */
+.text-link:link {
+  color: var(--orange);
+}
+
+/* visited link */
+.text-link:visited {
+  color: var(--light-blue);
+}
+
+/* mouse over link */
+.text-link:hover {
+  color: var(--light-orange);
+}
+
+/* selected link */
+.text-link:active {
+  color: var(--light-blue);
+}
