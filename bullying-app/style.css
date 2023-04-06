@@ -20,7 +20,7 @@
 
 /* visited link */
 .text-link:visited {
-  color: var(--light-blue);
+  color: var(--blue);
 }
 
 /* mouse over link */
