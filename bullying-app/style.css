@@ -15,7 +15,7 @@
 
 /* unvisited link */
 .text-link:link {
-  color: var(--orange);
+  color: var(--light-orange);
 }
 
 /* visited link */
@@ -25,10 +25,18 @@
 
 /* mouse over link */
 .text-link:hover {
-  color: var(--light-orange);
+  color: var(--orange);
 }
 
 /* selected link */
 .text-link:active {
   color: var(--light-blue);
+}
+
+.maintxt {
+  position: relative;
+}
+.maintxt > img,
+.overlay-text {
+  position: absolute;
 }
